@@ -17,7 +17,7 @@ div.cuerpo_text h2{
     font-family: "Righteous", sans-serif;
 }
 div.cuerpo_text{
-    width: 995px;
+    width: 870px;
     height: 90px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
@@ -44,7 +44,7 @@ div.lado{
 }
 aside{
     width: 185px;
-    height: 390px;
+    height: 656px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
     margin: 15px;
