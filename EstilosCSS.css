@@ -18,7 +18,7 @@ div.cuerpo_text h2{
 }
 div.cuerpo_text{
     width: 870px;
-    height: 90px;
+    height: 200px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
     margin-right: 75px;
@@ -29,6 +29,7 @@ div.cuerpo_text{
     background-color: rgb(0, 12, 37);
     color: papayawhip;
     float: right;
+    font-size: 20px;
 }
 div.lado h2{
     font-family: "Righteous", sans-serif;
@@ -44,7 +45,7 @@ div.lado{
 }
 aside{
     width: 185px;
-    height: 656px;
+    height: 500px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
     margin: 15px;
@@ -67,4 +68,29 @@ nav.links_text{
     float: left;
     align-items: center;
     margin-bottom: 30px;
+}
+button.boton{
+    font-family: "Righteous", sans-serif;
+    display: inline-block;
+    background-color: rgba(244, 140, 71, 0.99);
+    border: 5px solid white;
+    padding: 15px 25px;
+    color: papayawhip;
+    text-decoration: none;
+    border-radius: 15px;
+    float: right;
+    align-items: center;
+}
+footer{
+    text-align: center;
+    background-color: #cec6bf;
+    width: 3000px;
+    height: 150px;
+    margin-top: 1400px;
+    color: dimgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: xx-large;
+
 }
