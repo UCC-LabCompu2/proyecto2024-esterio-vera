@@ -55,3 +55,16 @@ aside{
     color: papayawhip;
     float: left;
 }
+nav.links_text{
+    font-family: "Prompt", sans-serif;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-right: 5px solid white;
+    padding:5px 30px;
+    border-radius: 15px;
+    background-color: rgba(244, 140, 71, 0.99);
+    color: papayawhip;
+    float: left;
+    align-items: center;
+    margin-bottom: 30px;
+}
