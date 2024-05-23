@@ -36,23 +36,9 @@ div.cuerpo_text {
     font-size: 20px;
 }
 
-div.lado h2 {
-    font-family: "Righteous", sans-serif;
-}
-
-div.lado {
-    font-family: "Prompt", sans-serif;
-    border: 5px solid white;
-    margin: 10px;
-    padding: 5px 30px;
-    border-radius: 15px;
-    background-color: rgb(0, 12, 37);
-    color: papayawhip;
-}
-
 #textoaside {
     width: 185px;
-    height: 500px;
+    height: 800px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
     margin: 15px;
