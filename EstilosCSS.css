@@ -77,7 +77,8 @@ button.boton {
     align-items: center;
 
 }
-.boton:hover, .boton:active, .boton:focus{
+
+.boton:hover, .boton:active, .boton:focus {
     box-shadow: 0 0 20px #f6e1e1;
     font-weight: bold;
 }
@@ -99,9 +100,11 @@ footer {
 body.Help {
     background-color: #cec6bf
 }
-#helpboton{
+
+#helpboton {
     font-size: 50px;
 }
+
 textarea {
     resize: none;
 }
