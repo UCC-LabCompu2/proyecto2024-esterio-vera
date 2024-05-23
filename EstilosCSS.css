@@ -99,7 +99,7 @@ button.boton {
 footer {
     text-align: center;
     background-color: #cec6bf;
-    width: 1600px;
+    width: 1520px;
     height: 150px;
     margin-top: 1400px;
     color: dimgray;
@@ -112,5 +112,8 @@ footer {
 
 body.Help {
     background-color: #cec6bf
+}
+#helpboton{
+    font-size: 50px;
 }
 
