@@ -102,4 +102,6 @@ body.Help {
 #helpboton{
     font-size: 50px;
 }
-
+textarea {
+    resize: none;
+}
