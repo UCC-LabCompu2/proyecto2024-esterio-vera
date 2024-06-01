@@ -24,7 +24,7 @@ div.cuerpo_text h2 {
 
 div.cuerpo_text {
     width: 870px;
-    height: 200px;
+    height: 220px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
     margin-left: 40px;
@@ -37,6 +37,10 @@ div.cuerpo_text {
     color: papayawhip;
     float: right;
     font-size: 20px;
+}
+div.contenedor{
+    visibility: hidden;
+    text-align: center;
 }
 
 #textoaside {
@@ -77,6 +81,7 @@ button.boton {
     border-radius: 15px;
     float: left;
     align-items: center;
+    cursor: pointer;
 
 }
 
@@ -119,4 +124,9 @@ body.Help {
 textarea {
     resize: none;
 }
-
+#SecondButtom{
+    float: right;
+    background-color: #ffffff;
+    color: rgba(244, 140, 71, 0.99);
+    border-color: rgba(244, 140, 71, 0.99);
+}
