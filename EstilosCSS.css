@@ -38,11 +38,25 @@ div.cuerpo_text {
     float: right;
     font-size: 20px;
 }
-div.contenedor{
+div.contenedor1{
     visibility: hidden;
     text-align: center;
 }
-
+div.contenedor2{
+    visibility: hidden;
+    text-align: center;
+}
+div.contenedor3{
+    visibility: hidden;
+    text-align: center;
+}div.contenedor4{
+     visibility: hidden;
+     text-align: center;
+ }
+div.contenedor5{
+    visibility: hidden;
+    text-align: center;
+}
 #textoaside {
     width: 185px;
     height: 815px;
@@ -125,6 +139,30 @@ textarea {
     resize: none;
 }
 #SecondButtom{
+    float: right;
+    background-color: #ffffff;
+    color: rgba(244, 140, 71, 0.99);
+    border-color: rgba(244, 140, 71, 0.99);
+}
+#thirdButtom{
+    float: right;
+    background-color: #ffffff;
+    color: rgba(244, 140, 71, 0.99);
+    border-color: rgba(244, 140, 71, 0.99);
+}
+#fourthButtom{
+    float: right;
+    background-color: #ffffff;
+    color: rgba(244, 140, 71, 0.99);
+    border-color: rgba(244, 140, 71, 0.99);
+}
+#fifthButtom{
+    float: right;
+    background-color: #ffffff;
+    color: rgba(244, 140, 71, 0.99);
+    border-color: rgba(244, 140, 71, 0.99);
+}
+#sixthButtom{
     float: right;
     background-color: #ffffff;
     color: rgba(244, 140, 71, 0.99);
