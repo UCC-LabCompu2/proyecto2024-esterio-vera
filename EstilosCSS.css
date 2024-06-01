@@ -5,6 +5,7 @@
 
 body {
     background-color: rgba(244, 140, 71, 0.99);
+    overflow-x: hidden;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
     align-items: center;
     background-color: rgb(0, 12, 37);
     border-bottom: 5px solid white;
-    width: 1520px;
+    width: 1350px;
 }
 
 div.cuerpo_text h2 {
@@ -74,7 +75,7 @@ button.boton {
     color: papayawhip;
     text-decoration: none;
     border-radius: 15px;
-    float: right;
+    float: left;
     align-items: center;
 
 }
@@ -96,7 +97,7 @@ font-weight: bold;
 footer {
     text-align: center;
     background-color: #cec6bf;
-    width: 1520px;
+    width: 1350px;
     height: 150px;
     margin-top: 1400px;
     color: dimgray;
@@ -118,3 +119,4 @@ body.Help {
 textarea {
     resize: none;
 }
+
