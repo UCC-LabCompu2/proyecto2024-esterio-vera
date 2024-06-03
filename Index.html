@@ -44,11 +44,12 @@
             <h2>Chill</h2>
             <p>Ideal para relajarte después de un largo día o para trabajar tranquilo en un lugar cómodo.</p>
             <br>
-            <button class="boton" onclick="Mostrar_Ocultar1();">Mostrar más/menos</button>
+            <button class="boton" onclick="Mostrar_Ocultar('contenedor1');">Mostrar más/menos</button>
             <div class="contenedor1">
-                Canciones: Limón y Sal, Espacio Sideral, TBT at the beach.
+                <p>Canciones: Limón y Sal, Espacio Sideral, TBT at the beach.</p>
                 <br>
-                <a href=" https://www.youtube.com/playlist?list=PLPdyhC4j_sD-rUADMf_DeBtDin82axAZC " target="_blank"><button class="boton" id="SecondButtom">A relajarse☕</button></a>
+                <a href=" https://www.youtube.com/playlist?list=PLPdyhC4j_sD-rUADMf_DeBtDin82axAZC " class="SecondButtom"
+                   target="_blank">Vamos a Relajarnos</a>
             </div>
         </div>
     </section>
@@ -62,8 +63,11 @@
             corazón expresar lo que las palabras no pueden." </p>
         <br>
         <h2>
-            <label>Dejanos un comentario!<textarea name="comentarios" rows="12" cols="23" placeholder="Escribe aquí tus comentarios!"></textarea></label></h2>
-            <button type="submit" class="boton">Enviar</button>
+            <label for="comentario">Dejanos un comentario!</label>
+            <textarea name="comentarios" id="comentario" rows="12" cols="23"
+                      placeholder="Escribe aquí tus comentarios!"></textarea>
+        </h2>
+        <button type="submit" class="boton">Enviar</button>
     </aside>
 
     <section>
@@ -71,10 +75,12 @@
             <h2>Party</h2>
             <p>Para disfrutar y bailar con tus amigos y pasarla de lo más bien toda la noche.</p>
             <br>
-            <button class="boton" onclick="Mostrar_Ocultar2();">Mostrar más/menos</button>
+            <button class="boton" onclick="Mostrar_Ocultar('contenedor2');">Mostrar más/menos</button>
             <div class="contenedor2">
-            <p> Lollipop (REMIX) Darell, Los del Espacio (Remix), Dispara.</p>
-            <a href=" https://www.youtube.com/playlist?list=PL8qSav6H_QarbaLUk5vxHYOi4hjsJ5V8J" target="_blank"><button class="boton" id="thirdButtom">Rompamos la pista!⚡</button></a>
+                <p> Lollipop (REMIX) Darell, Los del Espacio (Remix), Dispara.</p>
+                <a href=" https://www.youtube.com/playlist?list=PL8qSav6H_QarbaLUk5vxHYOi4hjsJ5V8J" target="_blank">
+                    <button class="SecondButtom">Rompamos la pista!⚡</button>
+                </a>
             </div>
         </div>
     </section>
@@ -84,10 +90,12 @@
             <h2>Techno</h2>
             <p>Para cuando quieras transportarte a un mundo completamente distinto y alucinante.</p>
             <br>
-            <button class="boton" onclick="Mostrar_Ocultar3();">Mostrar más/menos</button>
+            <button class="boton" onclick="Mostrar_Ocultar('contenedor3');">Mostrar más/menos</button>
             <div class="contenedor3">
-            <p>Canciones: It´s My Life (Remix), Another Night, Better Off Alone.</p>
-            <a href=" https://www.youtube.com/playlist?list=PLdjwzUeeI2iqX2BPXe_I-w-P3QWM57qBS" target="_blank"><button class="boton" id="fourthButtom">Yendo a otra dimension👽</button></a>
+                <p>Canciones: It´s My Life (Remix), Another Night, Better Off Alone.</p>
+                <a href=" https://www.youtube.com/playlist?list=PLdjwzUeeI2iqX2BPXe_I-w-P3QWM57qBS" target="_blank">
+                    <button class="SecondButtom">Yendo a otra dimension👽</button>
+                </a>
             </div>
         </div>
     </section>
@@ -97,10 +105,12 @@
             <h2>Emotional</h2>
             <p>Lo que necesitás para conectar con tus sentimientos interiores y tener un momento para ti.</p>
             <br>
-            <button class="boton" onclick="Mostrar_Ocultar4();">Mostrar más/menos</button>
+            <button class="boton" onclick="Mostrar_Ocultar('contenedor4');">Mostrar más/menos</button>
             <div class="contenedor4">
-            <p>Canciones: Slow It Down, Another Love, As It Was.</p>
-            <a href="https://www.youtube.com/playlist?list=PLgzTt0k8mXzHcKebL8d0uYHfawiARhQja" target="_blank"><button class="boton" id="fifthButtom">Toca tus sentimientos💞</button></a>
+                <p>Canciones: Slow It Down, Another Love, As It Was.</p>
+                <a href="https://www.youtube.com/playlist?list=PLgzTt0k8mXzHcKebL8d0uYHfawiARhQja" target="_blank">
+                    <button class="SecondButtom">Toca tus sentimientos💞</button>
+                </a>
             </div>
         </div>
     </section>
@@ -110,10 +120,12 @@
             <h2>Travel</h2>
             <p>Justo lo que no puede faltar en un viaje, amigos y buena música.</p>
             <br>
-            <button class="boton" onclick="Mostrar_Ocultar5();">Mostrar más/menos</button>
+            <button class="boton" onclick="Mostrar_Ocultar('contenedor5');">Mostrar más/menos</button>
             <div class="contenedor5">
-            <p>Canciones: Wake Me Up, Happier, I Gotta Feeling.</p>
-            <a href=" https://www.youtube.com/playlist?list=PLgzTt0k8mXzGjD1gQXkqC3bE0GzYwBnSD" target="_blank"><button class="boton" id="sixthButtom">Pisale hasta el fondo!🚗</button></a>
+                <p>Canciones: Wake Me Up, Happier, I Gotta Feeling.</p>
+                <a href=" https://www.youtube.com/playlist?list=PLgzTt0k8mXzGjD1gQXkqC3bE0GzYwBnSD" target="_blank">
+                    <button class="SecondButtom">Pisale hasta el fondo!🚗</button>
+                </a>
             </div>
         </div>
     </section>

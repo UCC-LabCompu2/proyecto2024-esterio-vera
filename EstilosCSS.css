@@ -27,10 +27,7 @@ div.cuerpo_text {
     height: 220px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
-    margin-left: 40px;
-    margin-right: 60px;
-    margin-bottom: 10px;
-    margin-top: 20px;
+    margin: 20px 60px 10px 40px;
     padding: 5px 30px;
     border-radius: 15px;
     background-color: rgb(0, 12, 37);
@@ -38,25 +35,32 @@ div.cuerpo_text {
     float: right;
     font-size: 20px;
 }
-div.contenedor1{
+
+div.contenedor1 {
     visibility: hidden;
     text-align: center;
 }
-div.contenedor2{
+
+div.contenedor2 {
     visibility: hidden;
     text-align: center;
 }
-div.contenedor3{
-    visibility: hidden;
-    text-align: center;
-}div.contenedor4{
-     visibility: hidden;
-     text-align: center;
- }
-div.contenedor5{
+
+div.contenedor3 {
     visibility: hidden;
     text-align: center;
 }
+
+div.contenedor4 {
+    visibility: hidden;
+    text-align: center;
+}
+
+div.contenedor5 {
+    visibility: hidden;
+    text-align: center;
+}
+
 #textoaside {
     width: 185px;
     height: 815px;
@@ -103,14 +107,17 @@ button.boton {
     box-shadow: 0 0 20px #f6e1e1;
     font-weight: bold;
 }
-a:link{
+
+a:link {
     color: rgba(1, 93, 253, 0.94);
 }
-a:visited{
-color: rgb(205, 23, 232);
+
+a:visited {
+    color: rgb(205, 23, 232);
 }
-a:active{
-font-weight: bold;
+
+a:active {
+    font-weight: bold;
 }
 
 footer {
@@ -131,6 +138,10 @@ body.Help {
     background-color: #cec6bf
 }
 
+#tituloprincipal {
+    font-size: 120px;
+}
+
 #helpboton {
     font-size: 50px;
 }
@@ -138,33 +149,16 @@ body.Help {
 textarea {
     resize: none;
 }
-#SecondButtom{
-    float: right;
+
+.SecondButtom{
+    font-family: "Righteous", sans-serif;
     background-color: #ffffff;
+    border: 5px solid rgba(244, 140, 71, 0.99);
+    padding: 15px 25px;
     color: rgba(244, 140, 71, 0.99);
-    border-color: rgba(244, 140, 71, 0.99);
-}
-#thirdButtom{
+    text-decoration: none;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
     float: right;
-    background-color: #ffffff;
-    color: rgba(244, 140, 71, 0.99);
-    border-color: rgba(244, 140, 71, 0.99);
-}
-#fourthButtom{
-    float: right;
-    background-color: #ffffff;
-    color: rgba(244, 140, 71, 0.99);
-    border-color: rgba(244, 140, 71, 0.99);
-}
-#fifthButtom{
-    float: right;
-    background-color: #ffffff;
-    color: rgba(244, 140, 71, 0.99);
-    border-color: rgba(244, 140, 71, 0.99);
-}
-#sixthButtom{
-    float: right;
-    background-color: #ffffff;
-    color: rgba(244, 140, 71, 0.99);
-    border-color: rgba(244, 140, 71, 0.99);
 }
