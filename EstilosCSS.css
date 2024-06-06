@@ -24,10 +24,10 @@ div.cuerpo_text h2 {
 
 div.cuerpo_text {
     width: 870px;
-    height: 220px;
+    height: 260px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
-    margin: 20px 60px 10px 40px;
+    margin: 20px 60px 15px 40px;
     padding: 5px 30px;
     border-radius: 15px;
     background-color: rgb(0, 12, 37);
@@ -109,16 +109,37 @@ button.boton {
 }
 
 a:link {
-    color: rgba(1, 93, 253, 0.94);
+    color: rgb(244, 140, 71, 0.9);
 }
 
 a:visited {
-    color: rgb(205, 23, 232);
+    color: rgb(244, 140, 71, 0.9);
 }
 
 a:active {
     font-weight: bold;
 }
+
+a.linkup {
+    color: #1ed660;
+}
+
+a.linkup:visited {
+    color: darkviolet
+}
+a.linkup2{
+    color: red;
+}
+a.linkup2:visited{
+    color: darkviolet;
+}
+a.linkup3{
+    color: #000000
+}
+a.linkup3:visited{
+    color: darkviolet;
+}
+
 
 footer {
     text-align: center;
@@ -145,17 +166,22 @@ body.Help {
 #helpboton {
     font-size: 50px;
 }
+a.helpboton2{
+    color: blue;
+}
+a.helpboton2:visited{
+    color: darkviolet;
+}
 
 textarea {
     resize: none;
 }
 
-.SecondButtom{
+.SecondButtom {
     font-family: "Righteous", sans-serif;
     background-color: #ffffff;
     border: 5px solid rgba(244, 140, 71, 0.99);
     padding: 15px 25px;
-    color: rgba(244, 140, 71, 0.99);
     text-decoration: none;
     border-radius: 15px;
     align-items: center;
