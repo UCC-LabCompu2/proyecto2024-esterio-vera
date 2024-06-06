@@ -188,3 +188,6 @@ textarea {
     cursor: pointer;
     float: right;
 }
+#BotonVover {
+    float: left;
+}
