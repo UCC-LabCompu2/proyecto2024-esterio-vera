@@ -128,16 +128,20 @@ a.linkup {
 a.linkup:visited {
     color: darkviolet
 }
-a.linkup2{
+
+a.linkup2 {
     color: red;
 }
-a.linkup2:visited{
+
+a.linkup2:visited {
     color: darkviolet;
 }
-a.linkup3{
+
+a.linkup3 {
     color: #000000
 }
-a.linkup3:visited{
+
+a.linkup3:visited {
     color: darkviolet;
 }
 
@@ -167,10 +171,12 @@ body.Help {
 #helpboton {
     font-size: 50px;
 }
-a.helpboton2{
+
+a.helpboton2 {
     color: blue;
 }
-a.helpboton2:visited{
+
+a.helpboton2:visited {
     color: darkviolet;
 }
 
@@ -189,16 +195,18 @@ textarea {
     cursor: pointer;
     float: right;
 }
+
 #BotonVover {
     float: left;
 }
 
-.paint{
+.paint {
     border: 1px solid #000000;
     background: rgba(255, 255, 255, 0.99);
 
 }
-canvas{
+
+canvas {
     padding-left: 0;
     padding-right: 0;
     margin-left: 30px;
@@ -210,7 +218,8 @@ canvas{
     height: 350px;
     border: 1px;
 }
-#botonpaint{
+
+#botonpaint {
     display: flex;
     float: right;
     font-family: "Righteous", sans-serif;
@@ -225,6 +234,7 @@ canvas{
     align-content: center;
     justify-content: flex-start;
 }
+
 .SecondButtom2 {
     font-family: "Righteous", sans-serif;
     background-color: #ffffff;

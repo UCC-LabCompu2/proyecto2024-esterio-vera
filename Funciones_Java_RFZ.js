@@ -7,9 +7,11 @@ function Mostrar_Ocultar(classsName) {//Función control de visibilidad de boton
         contenedor1.style.visibility = "visible";     // haciendo click nuevamente en el mismo botón.
     }
 }
+
 var puntero
+
 //Guardar el elemento y el contexto
-function dibujar(event){
+function dibujar(event) {
     var canvas = document.getElementById("main-canvas");
     var ctx = canvas.getContext("2d");
 
@@ -17,18 +19,18 @@ function dibujar(event){
     var posY = event.clientY;
     console.log(posX, posY);
 
-   canvas.onmousedown = function (){
-       puntero = true
-   };
-   canvas.onmouseup = function (){
-       puntero = false
-   };
+    canvas.onmousedown = function () {
+        puntero = true
+    };
+    canvas.onmouseup = function () {
+        puntero = false
+    };
 
-   if(puntero){
-       ctx.fillRect(posX-35,posY-310,10,10);
-       ctx.fill;
+    if (puntero) {
+        ctx.fillRect(posX - 35, posY - 310, 10, 10);
+        ctx.fill;
 
-   }
+    }
 
 
 }
