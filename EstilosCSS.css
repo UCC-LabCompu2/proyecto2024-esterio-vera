@@ -16,7 +16,6 @@ header {
     background-color: rgb(0, 12, 37);
     border-bottom: 5px solid white;
     width: 2400px;
-    font-size: 70px;
 }
 
 div.cuerpo_text h2 {
@@ -110,7 +109,7 @@ button.boton {
 }
 
 a:link {
-    color: rgb(246, 225, 225);
+    color: rgba(244, 140, 71, 0.99);
 }
 
 a:visited {
