@@ -8,26 +8,25 @@ function Mostrar_Ocultar(classsName) {//Función control de visibilidad de boton
     }
 }
 
-var puntero
+var puntero;
 
-//Guardar el elemento y el contexto
-function dibujar(event) {
-    var canvas = document.getElementById("main-canvas");
-    var ctx = canvas.getContext("2d");
+function dibujar(event) {//función para poder dibujar
+    var canvas = document.getElementById("main-canvas");//
+    var ctx = canvas.getContext("2d");//  retorna un contexto de dibujo en el lienzo
 
-    var posX = event.clientX;
-    var posY = event.clientY;
-    console.log(posX, posY);
+    var posX = event.clientX;//variable en el eje x
+    var posY = event.clientY;//variable en el eje y
+    console.log(posX, posY);//para imprimir los valores y ver en que posición está realmente ubicado el mpuse
 
-    canvas.onmousedown = function () {
+    canvas.onmousedown = function () {//puntero para cuando el click izqquierdo está presionado
         puntero = true
     };
-    canvas.onmouseup = function () {
+    canvas.onmouseup = function () {//puntero para cuando el click izqquierdo no está presionado
         puntero = false
     };
 
-    if (puntero) {
-        ctx.fillRect(posX - 35, posY - 310, 10, 10);
+    if (puntero) {//activación del pincel segun la cordenada
+        ctx.fillRect(posX - 30, posY - 310, 10, 10);//los numeros que se restan contribuyen a la calibración del pincel
         ctx.fill;
 
     }
