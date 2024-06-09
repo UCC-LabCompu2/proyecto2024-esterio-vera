@@ -64,7 +64,7 @@ div.contenedor5 {
 
 #textoaside {
     width: 185px;
-    height: 815px;
+    height: 1015px;
     font-family: "Prompt", sans-serif;
     border: 5px solid white;
     margin: 15px;
@@ -110,7 +110,7 @@ button.boton {
 }
 
 a:link {
-    color: rgb(244, 140, 71, 0.9);
+    color: rgb(246, 225, 225);
 }
 
 a:visited {
@@ -201,10 +201,38 @@ textarea {
 canvas{
     padding-left: 0;
     padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 3px;
     display: block;
-    width: 800px;
+    width: 1300px;
+    height: 350px;
     border: 1px;
+}
+#botonpaint{
+    display: flex;
+    float: right;
+    font-family: "Righteous", sans-serif;
+    background-color: rgba(255, 255, 255, 0.99);
+    border: 5px solid rgb(0, 12, 37);
+    color: #000c25;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+    align-content: center;
+    justify-content: flex-start;
+}
+.SecondButtom2 {
+    font-family: "Righteous", sans-serif;
+    background-color: #ffffff;
+    border: 5px solid rgba(244, 140, 71, 0.99);
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+    float: left;
 }
