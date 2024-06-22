@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Honk&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
           rel="stylesheet">
     <link REL="stylesheet" href="EstilosCSS.css" type="text/css">
-    <script type="text/javascript" src="Funciones_Java_RFZ.js"></script>
+
 </head>
 
 <header>
@@ -23,11 +23,14 @@
 </header>
 
 <body>
-<canvas id="main-canvas" class="paint" width="1310px" height="600px" onmousemove="dibujar(event)">
+<div>
+    <canvas id="main-canvas" class="paint" width="1310px" height="600px"></canvas>
+</div>
 
-</canvas>
 <aside>
     <a href="Paint.html" id="botonpaint">Limpiar</a>
+    <input type="color" id="colorPicker" value="#000000">
+    <script type="text/javascript" src="Funciones_Java_RFZ.js"></script>
 </aside>
 </body>
 

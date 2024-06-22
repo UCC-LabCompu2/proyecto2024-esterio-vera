@@ -1,19 +1,23 @@
-function Mostrar_Ocultar(classsName) {//Función control de visibilidad de botones:
-    let contenedor1 = document.getElementsByClassName(classsName)[0]
+function Mostrar_Ocultar(classsName) {
+    let contenedor1 = document.getElementsByClassName(classsName)[0];
 
-    if (contenedor1.style.visibility === "visible") {  //Esta función tiene el propósito de que cuando el usuario ingrese a la página NO se vea
-        contenedor1.style.visibility = "hidden";      //la información a menos que haga click en el botón correspondiente.
-    } else {                                          // Cuando el usuario desee dejar de ver la información, ésta desaparecerá
-        contenedor1.style.visibility = "visible";     // haciendo click nuevamente en el mismo botón.
+    if (contenedor1.style.visibility === "visible") {
+        contenedor1.style.visibility = "hidden";
+    } else {
+        contenedor1.style.visibility = "visible";
     }
 }
 
 var puntero = false;
+var color = '#000000'; // Default color
 
-function dibujar(event) {//función para poder dibujar
+document.getElementById('colorPicker').addEventListener('input', function(event) {
+    color = event.target.value;
+});
+
+function dibujar(event) {
     const canvas = document.getElementById("main-canvas");
     const ctx = canvas.getContext("2d");
-
 
     canvas.addEventListener('mousedown', function () {
         puntero = true;
@@ -34,9 +38,12 @@ function dibujar(event) {//función para poder dibujar
 
     function dibujarCirculo(x, y) {
         ctx.beginPath();
-        ctx.arc(x, y, 7, 0, Math.PI * 2, true); // Dibuja un círculo con radio 5
+        ctx.arc(x, y, 7, 0, Math.PI * 2, true);
+        ctx.fillStyle = color; // Use the selected color
         ctx.fill();
     }
-
-
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    dibujar();
+});
