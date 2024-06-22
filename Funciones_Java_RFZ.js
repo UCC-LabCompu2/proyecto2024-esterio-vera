@@ -8,27 +8,33 @@ function Mostrar_Ocultar(classsName) {//Función control de visibilidad de boton
     }
 }
 
-var puntero;
+var puntero = false;
 
 function dibujar(event) {//función para poder dibujar
-    var canvas = document.getElementById("main-canvas");//
-    var ctx = canvas.getContext("2d");//  retorna un contexto de dibujo en el lienzo
+    var canvas = document.getElementById("main-canvas");
+    var ctx = canvas.getContext("2d");
 
-    var posX = event.clientX;//variable en el eje x
-    var posY = event.clientY;//variable en el eje y
-    console.log(posX, posY);//para imprimir los valores y ver en que posición está realmente ubicado el mpuse
+    canvas.addEventListener('mousedown', function () {
+        puntero = true;
+    });
 
-    canvas.onmousedown = function () {//puntero para cuando el click izqquierdo está presionado
-        puntero = true
-    };
-    canvas.onmouseup = function () {//puntero para cuando el click izqquierdo no está presionado
-        puntero = false
-    };
+    canvas.addEventListener('mouseup', function () {
+        puntero = false;
+    });
 
-    if (puntero) {//activación del pincel segun la cordenada
-        ctx.fillRect(posX - 30, posY - 310, 10, 10);//los numeros que se restan contribuyen a la calibración del pincel
-        ctx.fill;
+    canvas.addEventListener('mousemove', function (event) {
+        if (puntero) {
+            var rect = canvas.getBoundingClientRect();
+            var posX = event.clientX - rect.left;
+            var posY = event.clientY - rect.top;
+            dibujarCirculo(posX, posY);
+        }
+    });
 
+    function dibujarCirculo(x, y) {
+        ctx.beginPath();
+        ctx.arc(x, y, 7, 0, Math.PI * 2, true); // Dibuja un círculo con radio 5
+        ctx.fill();
     }
 
 
