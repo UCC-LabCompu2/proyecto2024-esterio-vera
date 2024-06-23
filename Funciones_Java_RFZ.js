@@ -8,42 +8,55 @@ function Mostrar_Ocultar(classsName) {
     }
 }
 
-var puntero = false;
-var color = '#000000'; // Default color
+/**
+ * Esta función tiene el propósito de que cuando el usuario ingrese a la página NO se vea la información a menos que haga click en el botón correspondiente.
+ * Cuando el usuario desee dejar de ver la información, ésta desaparecerá haciendo click nuevamente en el mismo botón.
+ * @method Mostrar_Ocultar
+ * @param {string} class - La clase que se le pasa a la función de los contenedores 1,2,3,4 o 5.
+ * @return void
+ */
 
-document.getElementById('colorPicker').addEventListener('input', function(event) {
-    color = event.target.value;
-});
+document.addEventListener('DOMContentLoaded', () => {
+    let puntero = false;
+    let color = '#000000';
 
-function dibujar(event) {
+    document.getElementById('colorPicker').addEventListener('input', (event) => {
+        color = event.target.value;
+    });
+
     const canvas = document.getElementById("main-canvas");
     const ctx = canvas.getContext("2d");
 
-    canvas.addEventListener('mousedown', function () {
+    const getPositionX = (event) => event.clientX - canvas.getBoundingClientRect().left;
+    const getPositionY = (event) => event.clientY - canvas.getBoundingClientRect().top;
+
+    canvas.addEventListener('mousedown', () => {
         puntero = true;
     });
 
-    canvas.addEventListener('mouseup', function () {
+    canvas.addEventListener('mouseup', () => {
         puntero = false;
     });
 
-    canvas.addEventListener('mousemove', function (event) {
+    canvas.addEventListener('mousemove', (event) => {
         if (puntero) {
-            let rect = canvas.getBoundingClientRect();
-            let posX = event.clientX - rect.left;
-            let posY = event.clientY - rect.top;
+            const posX = getPositionX(event);
+            const posY = getPositionY(event);
             dibujarCirculo(posX, posY);
         }
     });
 
-    function dibujarCirculo(x, y) {
+    const dibujarCirculo = (x, y) => {
         ctx.beginPath();
         ctx.arc(x, y, 7, 0, Math.PI * 2, true);
-        ctx.fillStyle = color; // Use the selected color
+        ctx.fillStyle = color;
         ctx.fill();
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    dibujar();
+    };
 });
+
+/**
+ * Esta funcion permite que a la hora de dibujar. nuestra "brocha" tenga una forma circular con cierto radio especifico.
+ * @method dibujarCirculo
+ * @param {number} posicion - La posicion en donde se encuentra el mouse.
+ * @return void
+ */
